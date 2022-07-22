@@ -123,7 +123,7 @@ https://user-images.githubusercontent.com/40545422/166214198-38cf95ee-57ce-45bf-
 * Gmapping
 
 ```
-roslaunch raspicat_gazebo raspicat_iscas_museum.launch
+roslaunch raspicat_gazebo raspicat_iscas_museum.launch rviz:=false
 roslaunch raspicat_slam raspicat_gmapping.launch joy:=false
 roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps/gmapping
 ```
@@ -131,7 +131,7 @@ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/
 * Cartographer
 
 ```
-roslaunch raspicat_gazebo raspicat_iscas_museum.launch
+roslaunch raspicat_gazebo raspicat_iscas_museum.launch rviz:=false
 roslaunch raspicat_slam raspicat_cartographer.launch joy:=false
 roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps/cartographer
 ```
@@ -139,7 +139,7 @@ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/
 * Slam Toolbox
 
 ```
-roslaunch raspicat_gazebo raspicat_iscas_museum.launch
+roslaunch raspicat_gazebo raspicat_iscas_museum.launch rviz:=false
 roslaunch raspicat_slam raspicat_slam_toolbox.launch joy:=false
 roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps/slam_toolbox
 ```
@@ -149,7 +149,7 @@ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/
 * move_base
 
 ```
-roslaunch raspicat_gazebo raspicat_iscas_museum.launch
+roslaunch raspicat_gazebo raspicat_iscas_museum.launch rviz:=false
 roslaunch raspicat_navigation raspicat_navigation.launch navigation:="move_base"
 ```
 
@@ -157,7 +157,7 @@ https://user-images.githubusercontent.com/40545422/166214286-c78d74d1-cab1-489d-
 
 * Neonavigation
 ```
-roslaunch raspicat_gazebo raspicat_iscas_museum.launch
+roslaunch raspicat_gazebo raspicat_iscas_museum.launch rviz:=false
 roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav"
 ```
 
